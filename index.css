@@ -1,0 +1,97 @@
+html #wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vh;
+      
+}
+
+#video_player{
+  width: 100%;
+  cursor: pointer;
+}
+
+
+body
+{
+
+ margin:0 auto;
+ padding:0px;
+ background-color: grey;
+ 
+}
+
+.foot{
+ 
+  margin-top: 81vh;
+  width: 100%;
+  color: white;
+  background-color: black;
+  display: inline-block;
+  margin-top: 5vh;
+  
+}
+
+.header-background{
+  background-color: black;
+}
+html .foot #copyright{
+  float: left;
+  position: relative;
+  
+} 
+
+  
+#title{
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 1% 0 1% 0;
+   
+}
+
+#change_vol{
+    cursor: pointer;
+    width:173px;
+    
+}
+
+
+.fa-volume-high{
+    
+  cursor: pointer;
+   
+} 
+progress[value] {
+    appearance: none; 
+    border: none;     
+     
+    padding-top: 11px; 
+    position: relative;
+    bottom: 21px;
+    width: 100%;
+    cursor: pointer;
+   
+  }
+ 
+
+html #player_controls{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  background-color: #20c99742;
+    
+}
+
+#player_wrapper
+{
+  width: 60%;
+  justify-content: center;
+
+}
+
