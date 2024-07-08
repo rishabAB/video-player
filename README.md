@@ -1,4 +1,4 @@
-# Video Player Project
+# Video Player Project (Here's the link https://rishabab.github.io/video-player )
 
 This project is a simple video player built using HTML, CSS, and JavaScript. 
 It features a single video of a calming scene featuring a sunny beach and the soothing motion of the sea
