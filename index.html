@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
 <head>
 
@@ -19,54 +19,56 @@
       
 
     
-    <div id="wrapper">  
+      <div id="wrapper">  
 
-     <div id='player_wrapper'>
+        <div id='player_wrapper'>
+      
+        <video id='video_player' poster="thumbnail.jpg" preload="metadata" onclick="screen()">
+          <source src="samplehd.mp4" type='video/mp4'>
+          
+         </video>
+        
+         <progress id="progress" max="100" value="0" >
+           <div class="progress-bar" id="unique"></div>
+           
+         </progress>
+         
+         
+         
+        </div>
    
-     <video id='video_player' poster="thumbnail.jpg" preload="metadata" onclick="screen()">
-       <source src="samplehd.mp4" type='video/mp4'>
+        <div id='player_controls'>
+           
+         <span style="    display: flex;
+         align-items: center;
+         gap: 1em;">
+           <i class="fa fa-play" style="cursor: pointer;" onclick="buttonPlayOrPause(this)" id="play_button" ></i>
+         
        
-      </video>
-     
-      <progress id="progress" max="100" value="0" >
-        <div class="progress-bar" id="unique"></div>
+           <i class="fa-solid fa-rotate-left" style="cursor: pointer;" onclick="stop_vol()" step="0.05" min="0" max="1" value="1"></i>
+            <div class="time"> 
+            <span class="current">0:00 </span>/ <span class="duration">0:00</span>
+            </div> 
+         </span>
+       
+         <span class="fullvolume"> 
+          <i class="fa-solid fa-volume-high"  onclick="enableMute(this)"></i>
+           <input type="range" id="change_vol" onchange="change_vol()" ondrag="change_vol()" step="0.05" min="0" max="1" value="0.56" >
+           </span>
+         
+         
+        </div>
         
-      </progress>
-      
-      
-      
-     </div>
-
-     <div id='player_controls'>
-        
-      <span style="    display: flex;
-      align-items: center;
-      gap: 1em;">
-        <i class="fa fa-play" style="cursor: pointer;" onclick="buttonPlayOrPause(this)" id="play_button" ></i>
-      
-    
-        <i class="fa-solid fa-rotate-left" style="cursor: pointer;" onclick="stop_vol()" step="0.05" min="0" max="1" value="1"></i>
-         <div class="time"> 
-         <span class="current">0:00 </span>/ <span class="duration">0:00</span>
-         </div> 
-      </span>
-    
-      <span class="fullvolume"> 
-       <i class="fa-solid fa-volume-high"  onclick="enableMute(this)"></i>
-        <input type="range" id="change_vol" onchange="change_vol()" ondrag="change_vol()" step="0.05" min="0" max="1" value="0.56" >
-        </span>
-      
-      
-     </div>
-     
-    </div>
-    
-
+       </div>
+       
+       <footer class="foot">
+         <p id="copyright"> <b>C&copy;opyright 2022</b></p>   
+       </footer>
+   
+   
   </body>
 
-  <footer class="foot">
-    <p id="copyright"> <b>C&copy;opyright 2022</b></p>   
-  </footer>
+ 
     
     
   <script src="index.js"></script>
