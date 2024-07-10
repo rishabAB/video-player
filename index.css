@@ -4,6 +4,7 @@ html #wrapper{
   justify-content: center;
   align-items: center;
   margin-top: 7vh;
+  margin-bottom: 20vh;
       
 }
 
@@ -71,7 +72,7 @@ progress[value] {
      
     padding-top: 11px; 
     position: relative;
-    bottom: 21px;
+    bottom: 10px;
     width: 100%;
     cursor: pointer;
    
@@ -82,7 +83,7 @@ html #player_controls{
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 60%;
+  width: 80%;
   justify-content: space-between;
   padding: 0 10px 0 10px;
   background-color: #20c99742;
@@ -91,7 +92,7 @@ html #player_controls{
 
 #player_wrapper
 {
-  width: 60%;
+  width: 80%;
   justify-content: center;
 
 }
