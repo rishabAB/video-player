@@ -29,9 +29,9 @@ body
   width: 100%;
   color: white;
   background-color: black;
-  display: inline-block;
   position: fixed;
   bottom: 0px;
+  padding: 11px 0px 11px 0px;
   
 }
 
@@ -39,8 +39,8 @@ body
   background-color: black;
 }
 html .foot #copyright{
-  float: left;
-  position: relative;
+  text-align: center;
+  margin: auto;
   
 } 
 
