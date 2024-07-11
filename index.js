@@ -28,13 +28,7 @@ console.log(window?.clientInformation?.userAgentData?.platform);
     {
        isDeviceValid=true;
 
-       console.log("raechg");
-       body.style.display="none"; 
-       device_not_valid.classList.add("only_on_laptop");
-     device_not_valid.innerHTML=`<i class="fa-solid fa-triangle-exclamation" style="font-size: 20em;
-     text-align: center;
-     display: block;"></i><h1 style="width:100%;text-align: center;">${message}</h1>`;
-     console.log("test");
+     
     }
    
   }
@@ -43,13 +37,13 @@ console.log(window?.clientInformation?.userAgentData?.platform);
   }
   if(!isDeviceValid)
   {
-  //   console.log("raechg");
-  //   body.style.display="none"; 
-  //   device_not_valid.classList.add("only_on_laptop");
-  // device_not_valid.innerHTML=`<i class="fa-solid fa-triangle-exclamation" style="font-size: 10em;
-  // text-align: center;
-  // display: block;"></i><h2 style="width:100%;text-align: center;">${message}</h2>`;
-  // console.log("test");
+    console.log("raechg");
+    body.style.display="none"; 
+    device_not_valid.classList.add("only_on_laptop");
+  device_not_valid.innerHTML=`<i class="fa-solid fa-triangle-exclamation" style="font-size: 20em;
+  text-align: center;
+  display: block;"></i><h1 style="width:100%;text-align: center;">${message}</h1>`;
+  console.log("test");
   }
 
 })();
