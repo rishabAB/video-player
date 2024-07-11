@@ -8,7 +8,47 @@ const playButton=document.querySelector(".fa-play");
 
 const currentTimeElement=document.querySelector(".current");
 const durationTimeElement=document.querySelector(".duration");
- 
+
+const body=document.getElementById("body_id");
+
+const device_not_valid=document.getElementById("device_not_valid");
+let isDeviceValid=false;
+
+let message="This website can be viewed only on laptop";
+console.log(window?.clientInformation?.userAgentData?.platform);
+
+(function() {
+  console.log("KFNEDFELKF");
+  if(window.clientInformation && window.clientInformation 
+    && window.clientInformation.userAgentData && window.clientInformation.userAgentData.platform)
+  {
+    if(window.clientInformation.userAgentData.platform === 'Windows' 
+    || window.clientInformation.userAgentData.platform === 'macOs' || window.clientInformation.userAgentData.platform === 'Linux'
+    || window.clientInformation.userAgentData.platform === 'Chrome Os')
+    {
+      console.log("raechg");
+      isDeviceValid=true;
+      body.style.display="none";
+      
+    device_not_valid.innerHTML=`<h2>${message}</h2>`;
+    console.log("test");
+     
+    }
+   
+  }
+  else{
+    message="Please try on a different device";
+  }
+  // if(!isDeviceValid)
+  // {
+  //   body.style.display="none";
+      
+  //   device_not_valid.innerHTML=`<h2>${message}</h2>`
+  // }
+
+})();
+
+
 
 function startplayer() 
 {
