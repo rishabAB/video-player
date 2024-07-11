@@ -26,12 +26,7 @@ console.log(window?.clientInformation?.userAgentData?.platform);
     || window.clientInformation.userAgentData.platform === 'macOs' || window.clientInformation.userAgentData.platform === 'Linux'
     || window.clientInformation.userAgentData.platform === 'Chrome Os')
     {
-      console.log("raechg");
-      isDeviceValid=true;
-      body.style.display="none";
-      
-    device_not_valid.innerHTML=`<h2>${message}</h2>`;
-    console.log("test");
+       isDeviceValid=true;
      
     }
    
@@ -39,12 +34,13 @@ console.log(window?.clientInformation?.userAgentData?.platform);
   else{
     message="Please try on a different device";
   }
-  // if(!isDeviceValid)
-  // {
-  //   body.style.display="none";
-      
-  //   device_not_valid.innerHTML=`<h2>${message}</h2>`
-  // }
+  if(!isDeviceValid)
+  {
+    console.log("raechg");
+      body.style.display="none"; 
+    device_not_valid.innerHTML=`<h2>${message}</h2>`;
+    console.log("test");
+  }
 
 })();
 
