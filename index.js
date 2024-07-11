@@ -14,11 +14,11 @@ const body=document.getElementById("body_id");
 const device_not_valid=document.getElementById("device_not_valid");
 let isDeviceValid=false;
 
-let message="This website can be viewed only on laptop";
+let message="This website can be viewed only on a laptop";
 console.log(window?.clientInformation?.userAgentData?.platform);
 
 (function() {
-  console.log("KFNEDFELKF");
+  
   if(window.clientInformation && window.clientInformation 
     && window.clientInformation.userAgentData && window.clientInformation.userAgentData.platform)
   {
@@ -27,6 +27,13 @@ console.log(window?.clientInformation?.userAgentData?.platform);
     || window.clientInformation.userAgentData.platform === 'Chrome Os')
     {
        isDeviceValid=true;
+
+       console.log("raechg");
+       body.style.display="none"; 
+     device_not_valid.innerHTML=`<i class="fa-solid fa-triangle-exclamation" style="font-size: 10em;
+     text-align: center;
+     display: block;"></i><h2 style="width:100%;text-align: center;">${message}</h2>`;
+     console.log("test");
      
     }
    
@@ -34,13 +41,13 @@ console.log(window?.clientInformation?.userAgentData?.platform);
   else{
     message="Please try on a different device";
   }
-  if(!isDeviceValid)
-  {
-    console.log("raechg");
-      body.style.display="none"; 
-    device_not_valid.innerHTML=`<h2>${message}</h2>`;
-    console.log("test");
-  }
+  // if(!isDeviceValid)
+  // {
+  //   console.log("raechg");
+  //     body.style.display="none"; 
+  //   device_not_valid.innerHTML=`<h2>${message}</h2>`;
+  //   console.log("test");
+  // }
 
 })();
 
