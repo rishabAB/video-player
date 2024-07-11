@@ -27,8 +27,7 @@ console.log(window?.clientInformation?.userAgentData?.platform);
     || window.clientInformation.userAgentData.platform === 'Chrome Os')
     {
        isDeviceValid=true;
-
-     
+      
     }
    
   }
@@ -37,13 +36,15 @@ console.log(window?.clientInformation?.userAgentData?.platform);
   }
   if(!isDeviceValid)
   {
-    console.log("raechg");
     body.style.display="none"; 
     device_not_valid.classList.add("only_on_laptop");
   device_not_valid.innerHTML=`<i class="fa-solid fa-triangle-exclamation" style="font-size: 20em;
   text-align: center;
-  display: block;"></i><h1 style="width:100%;text-align: center;">${message}</h1>`;
-  console.log("test");
+  display: block;"></i><h1 style="    width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  padding: 0 4%;">${message}</h1>`;
+ 
   }
 
 })();
