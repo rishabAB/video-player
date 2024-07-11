@@ -27,27 +27,21 @@ console.log(window?.clientInformation?.userAgentData?.platform);
     || window.clientInformation.userAgentData.platform === 'Chrome Os')
     {
        isDeviceValid=true;
-
-       console.log("raechg");
-       body.style.display="none"; 
-     device_not_valid.innerHTML=`<i class="fa-solid fa-triangle-exclamation" style="font-size: 10em;
-     text-align: center;
-     display: block;"></i><h2 style="width:100%;text-align: center;">${message}</h2>`;
-     console.log("test");
-     
     }
    
   }
   else{
     message="Please try on a different device";
   }
-  // if(!isDeviceValid)
-  // {
-  //   console.log("raechg");
-  //     body.style.display="none"; 
-  //   device_not_valid.innerHTML=`<h2>${message}</h2>`;
-  //   console.log("test");
-  // }
+  if(!isDeviceValid)
+  {
+    console.log("raechg");
+    body.style.display="none"; 
+  device_not_valid.innerHTML=`<i class="fa-solid fa-triangle-exclamation" style="font-size: 10em;
+  text-align: center;
+  display: block;"></i><h2 style="width:100%;text-align: center;">${message}</h2>`;
+  console.log("test");
+  }
 
 })();
 
